@@ -1,0 +1,54 @@
+.hh{
+text-align: center;
+font-size: 50px; 
+font-family: 'Courier New', Courier, monospace;
+color: black;
+margin-top:50%;
+
+}
+
+.outer{
+    position: absolute;
+    width: 100%;
+    margin:0px;
+    background-size: cover;
+
+}
+
+
+
+body
+{
+    
+    text-align: center;
+    margin: 0px;
+
+}
+#cityName #place
+{
+font-size: 40px;
+}
+#cityDegVal
+{
+ font-size: 20px;
+}
+.weatherApp{
+ width:50%;
+ height:100vh;
+ background-color: blue;
+ float:left;
+ text-align: center;
+ 
+}
+.right{
+    width:50%;
+    height:100vh;
+    
+    float:left;
+    text-align: center;
+    margin-top: 10%;
+
+}
+.a{
+    font-size: 40px;
+}
