@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wetherApp</title>
+    <script type="text/javaScript" src="weather.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+</head>
+
+<body>
+    <div class="outer">
+
+        <div class="weatherApp">
+            <h1 class="hh">weatherApp</h1>
+        </div>
+        <div class="right">
+            <div id="cityName">
+                <div id="place">
+                    Bangaluru,karnataka
+                </div>
+                <div id="date" style="margin: 10px">
+                    <div></div>
+                    <div>
+                        <p>Wenesday,1:00 pm</p>
+                    </div>
+                </div>
+                <div id="degree">
+                    <div>
+                        <p>Unit : <span id="toCelsius" onclick="changeCity()">C</span>/<span id="toFarein"
+                                onclick="changeCity(1)">F</span></span></p>
+                    </div>
+                    <p><span id="cityDegValue">20</span style="margin-top=9px">&#176<span id="unit">C</span></p>
+                    <p id="cond">Partly Cloudy</p>
+                </div>
+                <div>
+                    <p>Select the city Name</p>
+                </div>
+
+
+
+                <div>
+                    <select name="cityName" id="citySelect" onchange="changeCity()">
+                        <option value="0">bangalore</option>
+                        <option value="1">chennai</option>
+                        <option value="2">calicut</option>
+                        <option value="3">kochi</option>
+
+                    </select>
+                    <!----<button onclick="changeCity()">click here</button>-->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
