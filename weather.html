@@ -1,3 +1,4 @@
+<!-- simple weather app to get the weather details of deffrent states using class-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,61 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>wetherApp</title>
-    <script type="text/javaScript" src="weather.js"></script>
+
     <link rel="stylesheet" type="text/css" href="mystyle.css">
 
-
+    <!-- Metadata is data (information) about data.
+            The <meta> tag provides metadata about the HTML document. Metadata 
+            will not be displayed on the page, but will be machine parsable.
+            Meta elements are typically used to specify page description, 
+            keywords, author of the document, last modified, and other metadata.
+            The metadata can be used by browsers (how to display content or reload 
+            page), search engines (keywords), or other web services.
+            Element : <Meta> Supported by chorome:yes,Internet Explorer:yes,
+            Mozilla:yes,Safari:yes,Opera:yes-->
 </head>
 
 <body>
     <div class="outer">
 
         <div class="weatherApp">
-            <h1 class="hh">weatherApp</h1>
+            <h1 class="heading">weather<span class="app">App</span></h1>
         </div>
         <div class="right">
             <div id="cityName">
                 <div id="place">
                     Bangaluru,karnataka
                 </div>
-                <div id="date" style="margin: 10px">
-                    <div></div>
-                    <div>
-                        <p>Wenesday,1:00 pm</p>
-                    </div>
+                <div id="date">
+                    <p class="dates">Wenesday,1:00 pm</p>
                 </div>
-                <div id="degree">
-                    <div>
-                        <p>Unit : <span id="toCelsius" onclick="changeCity()">C</span>/<span id="toFarein"
-                                onclick="changeCity(1)">F</span></span></p>
-                    </div>
-                    <p><span id="cityDegValue">20</span style="margin-top=9px">&#176<span id="unit">C</span></p>
-                    <p id="cond">Partly Cloudy</p>
-                </div>
-                <div>
-                    <p>Select the city Name</p>
-                </div>
-
-
 
                 <div>
-                    <select name="cityName" id="citySelect" onchange="changeCity()">
-                        <option value="0">bangalore</option>
-                        <option value="1">chennai</option>
-                        <option value="2">calicut</option>
-                        <option value="3">kochi</option>
 
-                    </select>
-                    <!----<button onclick="changeCity()">click here</button>-->
+                </div>
+            </div>
+            <div>
+                <p id="cond">Partly Cloudy</p>
+            </div>
+            <div id="degree">
+                <div>
+                    <p> <span id="cityDegValue" class="degree">20 </span><span class="deg">&#176;<span
+                                id="unit"></span><span id="toCelsius" onclick="new changeCity()">C</span>|&#176;<span
+                                id="toFarein" onclick="new changeCity(1)">F</span></span></p>
                 </div>
 
 
             </div>
+            <div class="cityNames">
+                <p>Enter the city Name</p>
+                <select name="cityName" id="citySelect" onchange="new changeCity()">
+                    <option value="0">bangalore</option>
+                    <option value="1">chennai</option>
+                    <option value="2">calicut</option>
+                    <option value="3">kochi</option>
+                </select>
+                <!----<button onclick="changeCity()">click here</button>-->
+            </div>
         </div>
     </div>
-
-
-
+    </div>
 </body>
+<script type="text/javaScript" src="weather.js"></script>
 
 </html>
