@@ -1,4 +1,2 @@
 # weatherApp
-Sample app ,
-This app shows the weather of different states
-fhfjh
+Its a simple app that shows the weather of diffrent states
